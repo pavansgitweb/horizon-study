@@ -1,13 +1,19 @@
 import requests
-from flask import Flask, make_response
+from flask import Flask, make_response, request
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def proxy(path):
+    # Target website URL
+    base_url = "https://horizon3.framer.website"
+    
+    # Construct the full URL by appending the requested path
+    target_url = f"{base_url}/{path}"
+    
     # Fetch the source code of the target website
-    url = "https://horizon3.framer.website/"
-    response = requests.get(url)
+    response = requests.get(target_url)
     
     if response.status_code == 200:
         # Get the HTML content
@@ -30,7 +36,7 @@ def index():
         return flask_response
     else:
         # Handle errors if the website couldn't be fetched
-        return f"Failed to fetch the website. Status code: {response.status_code}"
- 
+        return f"Failed to fetch the website. Status code: {response.status_code}", response.status_code
+
 if __name__ == '__main__':
     app.run(debug=True)
