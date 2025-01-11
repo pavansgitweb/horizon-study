@@ -36,7 +36,7 @@ def proxy(path):
         return flask_response
     else:
         # Handle errors if the website couldn't be fetched
-        return f"Failed to fetch the website. Status code: {response.status_code}", response.status_code
+        return f"Failed to fetch the website. Status code: {response.status_code}, Contact - pavansh555@gmail.com or @pavan._.hegde on insta", response.status_code
 
 if __name__ == '__main__':
     app.run(debug=True)
