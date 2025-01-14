@@ -25,6 +25,19 @@ def proxy(path):
             #__framer-badge-container {
                 display: none !important;
             }
+            .framer-bMdha .framer-1y8ghoz {
+            --framer-paragraph-spacing: 20px !important;
+            }
+            .framer-image.framer-text {
+                margin-inline: auto !important;
+            }
+            ul.framer-text, ol.framer-text {
+                margin-top: auto !important;
+            }
+            p.framer-text:not(:first-child), div.framer-text:not(:first-child), h1.framer-text:not(:first-child), h2.framer-text:not(:first-child), h3.framer-text:not(:first-child), h4.framer-text:not(:first-child), h5.framer-text:not(:first-child), h6.framer-text:not(:first-child), ol.framer-text:not(:first-child), ul.framer-text:not(:first-child), blockquote.framer-text:not(:first-child), .framer-image.framer-text:not(:first-child)
+            {
+                margin-top: auto !important;
+            }
         </style>
         """
         # Insert the style into the <head> section
