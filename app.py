@@ -34,9 +34,8 @@ def proxy(path):
             ul.framer-text, ol.framer-text {
                 margin-top: auto !important;
             }
-            p.framer-text:not(:first-child), div.framer-text:not(:first-child), h1.framer-text:not(:first-child), h2.framer-text:not(:first-child), h3.framer-text:not(:first-child), h4.framer-text:not(:first-child), h5.framer-text:not(:first-child), h6.framer-text:not(:first-child), ol.framer-text:not(:first-child), ul.framer-text:not(:first-child), blockquote.framer-text:not(:first-child), .framer-image.framer-text:not(:first-child)
-            {
-                margin-top: auto !important;
+            .framer-pmqm8 .framer-styles-preset-bu8nf8:not(.rich-text-wrapper), .framer-pmqm8 .framer-styles-preset-bu8nf8.rich-text-wrapper h2 {
+                margin: 40px 5px !important;
             }
         </style>
         """
