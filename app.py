@@ -25,6 +25,14 @@ def proxy(path):
             #__framer-badge-container {
                 display: none !important;
             }
+            #__framer-editorbar {
+                display: none !important;
+            }
+            .mode_normal {
+                display: none !important;
+            }
+            #above are framer badges
+            
             .framer-bMdha .framer-1y8ghoz {
             --framer-paragraph-spacing: 20px !important;
             }
